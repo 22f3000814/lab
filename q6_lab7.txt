@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    int i=2;       // declaring variable to check prime test   
+    
+    printf("Enter the positive integer n : ");
+    scanf("%d",&n);
+    
+    if (n==1)
+    {   
+        printf("\nIt is not a prime number");
+        return 0;
+    }
+    
+    if (n==2)
+    {    
+        printf("\nIt is a prime number.");
+        return 0;
+    }
+    
+    while(i<n)
+    {
+    
+    
+    if ((n%i)==0)
+    {
+        printf("\nIt is not a prime number.");
+        return 0;
+    }
+    
+    i++;
+    
+        
+    }
+
+    
+    printf("\nIt is a prime number.");
+    
+    return 0;
+}
