@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	double x,f;   //declaring our variables for x and f(x)
+	double pi=acos(-1);   // getting value of pi using cos-1(-1)=pi
+	
+	printf("Write the the value of x : ");
+	scanf("%lf",&x);
+	
+	if (x<0)      // if x<0
+	f=(x*x)+(2*x)+1;
+	 
+	else if (x<=pi)   // if 0<=x<=pi
+	f=sin(x);
+	
+	else             // x>pi
+	f=sqrt(x);
+	
+	printf("\nf(x) = %f",f);
+    
+    return 0;
+}

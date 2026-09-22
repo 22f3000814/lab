@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+	double a,b,c,d;   //declaring our variables
+	
+	printf("Write the the values of a,b and c for the quadratic polynomial : ");
+	scanf("%lg%lg%lg",&a,&b,&c);
+	
+    	if (a==0){        // a should not be zero for quadratic equation
+        printf("\nThis is not a quadratic equation as a is 0.");
+        return 0;
+    	}
+    	
+	d=(b*b)-(4*a*c);     // computing discriminant
+	
+	if (d>0){            // distinct real roots condition
+	printf("\n distinct real roots");
+}
+
+	else if(d==0){       // repeated real roots condition
+	printf("\n one repeated real root");
+}
+	else         //  complex roots condition
+	printf("\n two complex roots");
+	
+    return 0;
+}

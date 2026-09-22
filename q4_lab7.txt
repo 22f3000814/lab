@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+	double a,s=0.0;    // decalring variables for input and sum
+    int b;      // decalring a varaible to check if user give valid input
+    
+    printf("Enter a positive integer : ");
+    scanf("%lf",&a);
+    
+    b=a;    // converts given number to integer   
+    
+    if ((b!=a)||(a<=0))     // checking if valid input
+{
+    printf("\nYou have not entered a positive integer.");
+    return 0;
+}    
+    for (int i=1;i<=b;i+=1)   
+    s+=(1.0/i);                 // calculating the required sum
+    
+    printf("The required sum is %f",s);
+    
+    return 0;
+}

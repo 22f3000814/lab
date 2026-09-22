@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+	double x,s=1.0;    // declaring variable for x and sum
+    int n;
+    double f=1.0;         // declaring variable for each term calculation
+    
+    printf("Enter the value of x and n : ");
+    scanf("%lf%d",&x,&n);
+    
+    
+    for (int i=1;i<=n;i+=1)
+    {
+    f*=x/i;               // computing each term
+    s+=f;                 // calculating the required sum
+    }
+    
+    printf("The required approximation is %f",s);
+    
+    return 0;
+}

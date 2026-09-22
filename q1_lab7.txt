@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    double real;    // for our real input
+    int check;      // to store the integer part
+    
+    printf("Enter the real number : ");
+    scanf("%lf",&real);
+    
+    if (real>0)        // positive?
+    printf("\nThe number is Positive.");
+    
+    else if (real==0)  // zero?
+    printf("\nThe number is Zero.");
+    
+    else               // negative
+    printf("\nThe number is Negative.");
+    
+    check = real;     // converts the real number to integer
+    
+    // if it is equal to its integer part then its fractional part is zero and thus it is integer
+    if (real==check)  
+    printf("\nIt is an integer.");
+    else 
+    printf("\nIt is not an integer.");
+    
+    return 0;
+}
