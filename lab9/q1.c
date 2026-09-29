@@ -5,6 +5,7 @@ int bin_conv(int);
 int main()
 {
     int b,n;
+    printf("Enter the binary number : ");
     scanf("%d",&b);
     n=bin_conv(b);
     if (n==-1)     // if the input is invalid
